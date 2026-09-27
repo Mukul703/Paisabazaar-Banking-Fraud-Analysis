@@ -24,7 +24,7 @@ This project performs **end-to-end credit risk analysis**, starting with data cl
 ## 🔗 Project Links
 
 - 📊 **[View Interactive Tableau Dashboard](https://public.tableau.com/views/Paisabazar_17893881859270/PaisabazaarCreditRiskSegmentationPortfolioAnalysis?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
-- 🎥 **[Watch Project Walkthrough](YOUR_VIDEO_LINK)**
+- 🎥 **[Watch Project Walkthrough](https://drive.google.com/file/d/11QXBUf1_evu1qeWQFPc67fMEI4MjKO3I/view?usp=sharing)**
 
 ---
 
