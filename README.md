@@ -21,8 +21,16 @@ This project performs **end-to-end credit risk analysis**, starting with data cl
 
 ---
 
+## 🔗 Project Links
+
+- 📊 **[View Interactive Tableau Dashboard](YOUR_TABLEAU_LINK)**
+- 🎥 **[Watch Project Walkthrough](YOUR_VIDEO_LINK)**
+
+---
+
 ## 🧩 Problem Statement
-Paisabazaar has access to detailed customer credit and financial data, but lacks clear visibility into which customer behaviors and financial attributes differentiate good, average, and poor credit profiles.
+
+Paisabazaar has access to detailed customer credit and financial data, but lacks clear visibility into which customer behaviors and financial attributes differentiate **Good, Standard, and Poor** credit profiles.
 
 This project explores and analyzes credit-related data to identify the key factors associated with different credit score categories, supporting more consistent credit assessment and risk-aware decision-making.
 
@@ -33,48 +41,55 @@ This project explores and analyzes credit-related data to identify the key facto
 - Analyze customer credit and financial data to understand how behavioral and financial attributes vary across different credit score categories
 - Identify the key factors linked with **Good, Standard, and Poor** credit profiles
 - Build an interactive **Tableau dashboard** to monitor credit-risk segments and key portfolio indicators
-- Provide data-driven insights to support credit assessment, risk monitoring, and product recommendations 
+- Provide data-driven insights to support credit assessment, risk monitoring, and product recommendations
 
 ---
 
 ## 📂 Dataset Summary
-- **Rows:** 100,000  
-- **Columns:** 28  
-- **Target Variable:** `Credit_Score` *(Good / Standard / Poor)*  
-- **Missing Values:** 0  
-- **Duplicate Records:** 0  
+
+- **Rows:** 100,000
+- **Columns:** 28
+- **Target Variable:** `Credit_Score` *(Good / Standard / Poor)*
+- **Missing Values:** 0
+- **Duplicate Records:** 0
 
 ---
 
 ## 🧹 Data Wrangling & Cleaning
+
 The dataset was prepared for analysis through the following steps:
-- Corrected data type inconsistencies (float ➝ int for count-based fields)
+
+- Corrected data type inconsistencies *(float → int for count-based fields)*
 - Converted identifier columns (`Customer_ID`, `SSN`, `ID`) to object type
 - Cleaned and standardized the multi-valued `Type_of_Loan` column
 - Created an additional feature: `Num_Loan_Types`
-- Validated dataset consistency after preprocessing (shape and dtypes)
+- Validated dataset consistency after preprocessing *(shape and dtypes)*
 
 ---
 
 ## 📈 EDA Approach (UBM Framework)
+
 The visualization workflow follows a structured **UBM** approach:
 
 ### U — Univariate Analysis
-- Credit Score distribution (Target variable)
-- Key feature distributions (Age, Income, Outstanding Debt, Credit Utilization, Delayed Payments)
+
+- Credit Score distribution *(target variable)*
+- Key feature distributions *(Age, Income, Outstanding Debt, Credit Utilization, Delayed Payments)*
 
 ### B — Bivariate Analysis
-- Credit Score vs numeric features (Boxplots)
-  - Delayed Payments vs Credit Score  
-  - Outstanding Debt vs Credit Score  
-- Credit Score vs categorical features (Countplot / Grouped Bar)
-  - Credit Mix vs Credit Score  
-- Trend-based comparison (Line Plot)
-  - Credit Score by Age Group  
+
+- Credit Score vs numeric features *(Boxplots)*
+  - Delayed Payments vs Credit Score
+  - Outstanding Debt vs Credit Score
+- Credit Score vs categorical features *(Countplot / Grouped Bar)*
+  - Credit Mix vs Credit Score
+- Trend-based comparison *(Line Plot)*
+  - Credit Score by Age Group
 
 ### M — Multivariate Analysis
-- Correlation Heatmap (relationships between numerical variables)
-- Pair Plot (pattern discovery across multiple features)
+
+- Correlation Heatmap *(relationships between numerical variables)*
+- Pair Plot *(pattern discovery across multiple features)*
 
 ---
 
@@ -83,6 +98,7 @@ The visualization workflow follows a structured **UBM** approach:
 ### U — Univariate Analysis
 
 #### 1) Credit Score Distribution (Target Variable)
+
 <img src="docs/screenshots/Credit_Score_Distribution.png" width="750">
 
 ---
@@ -90,21 +106,25 @@ The visualization workflow follows a structured **UBM** approach:
 ### B — Bivariate Analysis
 
 #### 2) Delayed Payments vs Credit Score (Risk Signal)
+
 <img src="docs/screenshots/Delayed_payments_vs_Credit_score.png" width="750">
 
 ---
 
 #### 3) Outstanding Debt vs Credit Score (Debt Burden)
+
 <img src="docs/screenshots/outstanding_debt_vs_credit_score.png" width="750">
 
 ---
 
 #### 4) Credit Mix vs Credit Score (Segmentation Insight)
+
 <img src="docs/screenshots/Credit_mix_vs_credit_score.png" width="750">
 
 ---
 
 #### 5) Credit Score by Age Group (Trend View)
+
 <img src="docs/screenshots/Credit_score_by_age_group.png" width="750">
 
 ---
@@ -112,22 +132,28 @@ The visualization workflow follows a structured **UBM** approach:
 ### M — Multivariate Analysis
 
 #### 6) Correlation Heatmap (Feature Relationships)
+
 <img src="docs/screenshots/correlation_heatmap.png" width="750">
 
 ---
 
 #### 7) Pair Plot (Multivariate Patterns)
+
 <img src="docs/screenshots/pair_plot.png" width="750">
 
-## Key Insights
+---
 
-- **Standard is the biggest segment (~53%)**, so Paisabazaar can create the highest business impact by improving decisions and offers for this group instead of focusing only on extreme Good/Poor customers.  
+## 🔑 Key Insights
 
-- **Payment behavior is the strongest risk signal** — *Poor* customers show much higher delayed payments (**median ~17–18**) vs *Good* (**~7–8**), making it the best variable for early warning and stricter credit rules.  
+- **Standard is the biggest segment (~53%)**, making it an important segment for credit assessment, product targeting, and risk monitoring.
 
-- **Debt + Loan exposure indicates credit stress** — customers with more active loans (**Poor median ~5 vs Good ~2**) and higher outstanding debt are consistently linked with weaker scores, supporting stronger limit control and risk-based approvals.  
+- **Payment behavior is a strong risk signal** — *Poor* customers show substantially higher delayed payments (**median ~17–18**) compared with *Good* customers (**~7–8**).
 
-- **Credit mix is a clean segment separator** — *Good credit mix → Good score* and *Bad credit mix → Poor score*, making it useful for consistent profiling and better product recommendations.  
+- **Debt and loan exposure indicate credit stress** — customers with more active loans (**Poor median ~5 vs Good ~2**) and higher outstanding debt are associated with weaker credit scores.
+
+- **Credit mix provides clear segment differentiation** — customers with a *Good* credit mix are more frequently associated with *Good* scores, while a *Bad* credit mix is more frequently associated with *Poor* scores.
+
+---
 
 ## 📊 Tableau Dashboard
 
@@ -143,17 +169,19 @@ The cleaned dataset prepared during the Python data analysis stage was used to b
 
 ### 🔗 Interactive Dashboard
 
-[View Tableau Dashboard](https://public.tableau.com/views/Paisabazar_17893881859270/PaisabazaarCreditRiskSegmentationPortfolioAnalysis?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+[**Open Tableau Dashboard**](YOUR_TABLEAU_LINK)
 
 ### Dashboard Preview
 
 <img src="tableau/Dashboard.png" width="900">
+
 ---
 
-## Business Recommendations
-- Prioritize **repayment behavior signals** (delays, due-date patterns) while assessing credit risk
-- Apply a **Debt Stress Check** using outstanding debt + loan exposure to reduce default risk
-- Focus on uplifting the **Standard** segment using structured credit upgrades and risk-aware product recommendations
+## 💡 Business Recommendations
+
+- Prioritize **repayment behavior signals** such as delayed payments and due-date patterns when assessing credit risk
+- Apply a **Debt Stress Check** using outstanding debt and loan exposure to identify higher-risk profiles
+- Focus on improving the **Standard** segment through structured credit improvement strategies and risk-aware product recommendations
 
 ---
 
@@ -161,9 +189,9 @@ The cleaned dataset prepared during the Python data analysis stage was used to b
 
 This project combines **Python-based exploratory data analysis with interactive Tableau dashboarding** to provide an end-to-end view of customer credit risk.
 
-The analysis identifies key risk drivers such as payment behavior, debt burden, loan exposure, and credit mix, while the Tableau dashboard enables interactive exploration of these patterns across different customer segments.
+The analysis identifies key risk drivers such as **payment behavior, debt burden, loan exposure, and credit mix**, while the Tableau dashboard enables interactive exploration of these patterns across different customer segments.
 
-The resulting insights can support **more consistent credit assessment, risk monitoring, and data-driven product recommendations**.
+The resulting insights can support **consistent credit assessment, risk monitoring, and data-driven product recommendations**.
 
 ---
 
@@ -172,16 +200,27 @@ The resulting insights can support **more consistent credit assessment, risk mon
 - **Programming & Analysis:** Python, Pandas, NumPy
 - **Data Visualization:** Matplotlib, Seaborn, Plotly
 - **Dashboarding:** Tableau
-- **Environment:** Google Colab, Jupyter Notebook 
+- **Environment:** Google Colab, Jupyter Notebook
 
 ---
 
-## 👤 Author
-**Mukul**  
-Data Analyst | SQL | Python | EDA | Power BI  
+## 📁 Repository Structure
 
-
-
-
-
-
+```text
+Paisabazaar-Banking-Fraud-Analysis/
+│
+├── data/
+│   ├── raw/
+│   └── processed/
+│
+├── docs/
+│   └── screenshots/
+│
+├── notebooks/
+│   └── PaisabazaarBankingFraudProject.ipynb
+│
+├── tableau/
+│   └── Paisabazaar.twb
+│
+├── README.md
+└── requirements.txt
