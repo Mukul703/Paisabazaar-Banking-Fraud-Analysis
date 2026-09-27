@@ -147,7 +147,7 @@ The cleaned dataset prepared during the Python data analysis stage was used to b
 
 ### Dashboard Preview
 
-<img src="Tableau/Dashboard.png" width="900">
+<img src="tableau/Dashboard.png" width="900">
 ---
 
 ## Business Recommendations
