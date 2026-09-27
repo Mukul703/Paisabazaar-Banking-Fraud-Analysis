@@ -23,7 +23,7 @@ This project performs **end-to-end credit risk analysis**, starting with data cl
 
 ## 🔗 Project Links
 
-- 📊 **[View Interactive Tableau Dashboard](YOUR_TABLEAU_LINK)**
+- 📊 **[View Interactive Tableau Dashboard](https://public.tableau.com/views/Paisabazar_17893881859270/PaisabazaarCreditRiskSegmentationPortfolioAnalysis?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
 - 🎥 **[Watch Project Walkthrough](YOUR_VIDEO_LINK)**
 
 ---
@@ -169,7 +169,7 @@ The cleaned dataset prepared during the Python data analysis stage was used to b
 
 ### 🔗 Interactive Dashboard
 
-[**Open Tableau Dashboard**](YOUR_TABLEAU_LINK)
+[**Open Tableau Dashboard**](https://public.tableau.com/views/Paisabazar_17893881859270/PaisabazaarCreditRiskSegmentationPortfolioAnalysis?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ### Dashboard Preview
 
