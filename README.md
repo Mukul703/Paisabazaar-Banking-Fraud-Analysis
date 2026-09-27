@@ -83,44 +83,41 @@ The visualization workflow follows a structured **UBM** approach:
 ### U — Univariate Analysis
 
 #### 1) Credit Score Distribution (Target Variable)
-<img src="docs/Screenshots/Credit_Score_Distribution.png" width="750">
+<img src="docs/screenshots/Credit_Score_Distribution.png" width="750">
 
 ---
 
 ### B — Bivariate Analysis
 
 #### 2) Delayed Payments vs Credit Score (Risk Signal)
-<img src="docs/Screenshots/Delayed_payments_vs_Credit_score.png" width="750">
+<img src="docs/screenshots/Delayed_payments_vs_Credit_score.png" width="750">
 
 ---
 
 #### 3) Outstanding Debt vs Credit Score (Debt Burden)
-<img src="docs/Screenshots/outstanding_debt_vs_credit_score.png" width="750">
+<img src="docs/screenshots/outstanding_debt_vs_credit_score.png" width="750">
 
 ---
 
 #### 4) Credit Mix vs Credit Score (Segmentation Insight)
-<img src="docs/Screenshots/Credit_mix_vs_credit_score.png" width="750">
+<img src="docs/screenshots/Credit_mix_vs_credit_score.png" width="750">
 
 ---
 
 #### 5) Credit Score by Age Group (Trend View)
-<img src="docs/Screenshots/Credit_score_by_age_group.png" width="750">
+<img src="docs/screenshots/Credit_score_by_age_group.png" width="750">
 
 ---
 
 ### M — Multivariate Analysis
 
 #### 6) Correlation Heatmap (Feature Relationships)
-<img src="docs/Screenshots/correlation_heatmap.png" width="750">
+<img src="docs/screenshots/correlation_heatmap.png" width="750">
 
 ---
 
 #### 7) Pair Plot (Multivariate Patterns)
-<img src="docs/Screenshots/pair_plot.png" width="750">
-
----
-
+<img src="docs/screenshots/pair_plot.png" width="750">
 
 ## Key Insights
 
